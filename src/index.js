@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FunComponent from "./FunComp";
-import ClassComp from "./ClassComp";
+import App from "./App";
 
-ReactDOM.render(<FunComponent />, document.querySelector("#root"));
-// ReactDOM.render(<ClassComp />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector("#root"));

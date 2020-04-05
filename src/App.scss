@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* FunComponent Component*/
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+  }
+
+  input {
+    width: 98%;
+    margin: 0 auto;
+    padding: 0.7rem;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+// ALL USERS
+.users {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 2rem 0;
+
+  // USERS HEADER
+  .users-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .tool-name {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .sort-icons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+      }
+    }
+
+    p {
+      color: #00c7a2;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+
+  // USER
+  .user {
+    margin: 2.5px 0;
+    &:hover {
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      .user-underline {
+        display: none;
+      }
+    }
+
+    .user-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      cursor: pointer;
+      padding: 1.5rem 0;
+
+      .type {
+        color: #ffb624;
+      }
+
+      .status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          border-radius: 15px;
+          padding: 0.5rem 1rem;
+          color: #fff;
+        }
+
+        &-ON {
+          background: #00c7a2;
+        }
+
+        &-OFF {
+          background: grey;
+        }
+      }
+    }
+
+    .user-underline {
+      width: 97%;
+      height: 1.5px;
+      margin: 0 auto;
+      background-color: #f4f4f4;
+    }
+  }
+
+  .tool-name {
+    width: 55%;
+    padding: 0 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .used-on,
+  .type,
+  .status {
+    width: 15%;
+    text-align: center;
+  }
+}
+
+// SEARCH BAR
+.search {
+  position: relative;
+
+  .search-icon {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+  }
+}
